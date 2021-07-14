@@ -1,26 +1,16 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*--------------------- 
+    common utilities 
+ ----------------------*/
 body{
     font-family: 'Poppins', sans-serif;
    
    
 }
-.container{
-    margin: 0;
-
-}
-.banner-image img{
-    width: 556px;
-    height: 438px;
-    padding-left: 57px;
-    transition: width 5s, height 5s, transform 5s, 1s ;
-      
-}
-.banner-image:hover {
-    width: 600px;
-    height: 500px;
-    transform: rotate(65deg);
-}
+/* ------------------
+Start of Top Banner
+-------------------- */
 .top-banner{
     width: 100%;
     height: 560px;
@@ -49,6 +39,33 @@ body{
    font-size: 64px;
 
 }
+
+.banner-image img{
+    width: 556px;
+    height: 438px;
+    padding-left: 57px;
+    transition: width 5s, height 5s, transform 5s, 1s ;
+      
+}
+.banner-image:hover {
+    width: 600px;
+    height: 500px;
+    transform: rotate(65deg);
+}
+/* Top Banner end */
+
+/* Players */
+.players-container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 45px;
+}
 .player{
     width: 330px;
     height: 456px;
@@ -56,11 +73,7 @@ body{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 
 }
-.players-container{
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-}
+
 .player-name{
     font-weight: bold;
     font-size: 24px;
@@ -69,17 +82,15 @@ body{
     width: 300px;
     height: 256px;
 }
-.players{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 30px;
-    grid-column-gap: 45px;
-}
+
 .details{
     font-weight: 400;
     font-size: 16px;
     color: #6C6C6C;
 }
+/* Players  */
+
+/* Bottom Banner Start */
 .bottom-banner img{
     width: 567px;
     height: 427px;
@@ -99,14 +110,24 @@ body{
 .bottom-banner-text h1{
     font-size: 48px;
 }
-.highlight-container{
-    margin-top: 165px;
-}
+/* End of Buttom Banner */
+
+/*---------------
+ Highlights start
+----------------- */
 .highlight{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
+.highlight-container{
+    margin-top: 165px;
+}
+/* Highlight end */
+/*-------------- 
+Footer Start
+-------------- */
 .footer-container{
     width: 483px;
     height: 213px;
@@ -131,27 +152,34 @@ small{
     font-size: 18px;
     font-weight: 400px;
 }
+/* Footer end */
+
+
 /* Media Queries */
 /* For Mobile Device */
 @media only screen and (max-width:688px) {
     .players{
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(1,1fr);
-        grid-row-gap: 30px;
-        grid-column-gap: 45px;
+        flex-direction: column;
+        
     }
     .container{
         width: 100%;
     }
-
-}
-@media screen and (min-width:688px) and (max-width:992px){
-    .players{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-       
+    .top-banner{
+        width: 100%;
     }
-.container{
-         width: 100%;
-        }
+    .highlight{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .footer-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+    }
+
 }

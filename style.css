@@ -123,8 +123,43 @@ Start of Top Banner
 
 .highlight-container{
     margin-top: 165px;
+    margin-bottom: 100px;
 }
+/* Best aplayers */
+.photo-album{
+    margin-top: 25px;
+    display:flex;
+    padding-left: 10px;
+    justify-content: center;  
+}
+.photo img{
+    width: 250px;
+    height: 175px;
+    margin-left: 10px;
+}
+.photo img:hover{
+    width: 350px;
+    height: 250px;
+}
+
 /* Highlight end */
+.information-center{
+ 
+    display: flex;
+    background-color: rgba(122, 74, 199, 0.747);
+    border-radius: 20px;
+    margin-top: 50px;
+   
+}
+.info-center{
+    margin-left: 10%;
+    margin-right: 10%;
+   
+}
+.info-center a{
+    text-decoration: none;
+    color: #FFFF;
+}
 /*-------------- 
 Footer Start
 -------------- */
@@ -169,6 +204,8 @@ small{
     }
     .top-banner{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .highlight{
         display: flex;
@@ -180,6 +217,9 @@ small{
         display: flex;
         justify-content: center;
         margin-left: 0%;
+    }
+    .footer-icon img{
+        width: 100%;
     }
 
 }
